@@ -17,10 +17,120 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 600px;
+    padding: 20px;
 }
 
 .description-about-home {
     width: 600px;
     height: auto;
     text-align: center;
+    margin-top: 20px;
+}
+
+.our-services-about {
+    width: 300px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #913561;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.our-services-about::before {
+    content: 'NUESTROS SERVICIOS';
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    color: #913561;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    z-index: 10;
+    transition: all 0.5s;
+}
+
+.our-services-about::after {
+    display: block;
+    content: ' ';
+    background: linear-gradient(#913561, #CC293F);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s;
+}
+
+.our-services-about:hover::before {
+    color: #fff;
+}
+
+.our-services-about:hover::after {
+    left: 0;
+}
+
+.qualities-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.quality {
+    width: 1fr;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.quality:nth-child(1) {
+    border: 2px solid #913561;
+    color: #913561;
+}
+
+.quality:nth-child(2) {
+    border: 2px solid #FFA732;
+    color: #FFA732;
+}
+
+.quality:nth-child(3) {
+    border: 2px solid #CC293F;
+    color: #CC293F;
+}
+
+.quality:nth-child(1):hover {
+    background-color: #913561;
+    color: #fff;
+}
+
+.quality:nth-child(2):hover {
+    background-color: #FFA732;
+    color: #fff;
+}
+
+.quality:nth-child(3):hover {
+    background-color: #CC293F;
+    color: #fff;
+}
+
+.quality-name {
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: 48px;
+}
+
+.quality-description {
+    font-size: 18px;
+    text-align: justify;
 }

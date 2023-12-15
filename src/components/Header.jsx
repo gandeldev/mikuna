@@ -1,16 +1,28 @@
-import '../styles/Header.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react';
+import '../styles/Header.css';
 
 const Header = () => {
-
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const handleMenuButton = () => {
-        setIsOpen(!isOpen)
+        setIsOpen(!isOpen);
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            setIsScrolled(scrollPosition > 80);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <header className="header">
+        <header className={`header ${ isScrolled ? 'scrolled' : ' ' }`}>
             <a className='menu-option' href="/">Inicio</a>
             <a className='menu-option' href="/services">Servicios</a>
             <a href='/' className='go-home'>

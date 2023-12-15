@@ -10,6 +10,10 @@
     gap: 20px;
 }
 
+.header.scrolled {
+    position: fixed;
+}
+
 .logo-mikuna {
     width: auto;
     height: 60px;
