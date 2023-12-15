@@ -26,7 +26,7 @@ const Header = () => {
             <a className='menu-option' href="/">Inicio</a>
             <a className='menu-option' href="/services">Servicios</a>
             <a href='/' className='go-home'>
-                <img src="https://i.postimg.cc/7Lms3YzY/image-removebg-preview.png" className='logo-mikuna' />
+                <img src="https://i.postimg.cc/yNtyg5JQ/mikuna-logo.png" className='logo-mikuna' draggable={false} />
             </a>
             <a className='menu-option'>Nosotros</a>
             <a className='menu-option'>Contactanos</a>

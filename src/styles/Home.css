@@ -89,7 +89,7 @@
     justify-content: center;
     padding: 40px;
     gap: 20px;
-    transition: all 0.5s;
+    background: #fff;
     cursor: pointer;
 }
 
@@ -109,18 +109,21 @@
 }
 
 .quality:nth-child(1):hover {
-    background-color: #913561;
+    background: linear-gradient(to bottom, #913561, #4d2d3c);
     color: #fff;
+    border: none;
 }
 
 .quality:nth-child(2):hover {
-    background-color: #CC293F;
+    background: linear-gradient(to bottom, #CC293F, #5e1e26);
     color: #fff;
+    border: none;
 }
 
 .quality:nth-child(3):hover {
-    background-color: #FFA732;
+    background: linear-gradient(to bottom, #FFA732, #a76e24);
     color: #fff;
+    border: none;
 }
 
 .quality-name {
@@ -149,15 +152,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
-    width: 800px;
+    width: 900px;
     height: 400px;
     overflow: hidden;
-    border-radius: 20px;
+    padding: 10px;
 }
 
 .comment {
-    width: 100%;
+    width: calc(100% - 10px);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -167,15 +169,36 @@
     gap: 40px;
     position: absolute;
     top: 0;
-    left: -100%;
+    transition: all 0.5s;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
 }
 
 .comment.center {
     left: 0;
 }
 
+.comment.left {
+    left: -100%;
+}
+
+.comment.right {
+    left: 100%;
+}
+
+
 .author-name {
     font-size: 32px;
+    background: linear-gradient(#913561, #CC293F);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.author-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 
 .author-comment {
@@ -206,4 +229,100 @@
 
 .right-button-comments {
     right: 20px;
+}
+
+@media (max-width: 1220px) {
+    .qualities-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quality-name {
+        font-size: 24px;
+    }
+
+    .quality-description {
+        font-size: 18px;
+    }
+
+    .comments-container {
+        width: 600px;
+        height: 400px;
+    }
+
+    .comment {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 740px) {
+    .quality {
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .description-about-home {
+        width: 100%;
+    }
+
+    .comments-container {
+        width: 300px;
+        height: 400px;
+    }
+
+    .comment {
+        gap: 10px;
+    }
+
+    .author-name {
+        font-size: 24px;
+    }
+
+    .author-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .left-button-comments,
+    .right-button-comments {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .left-button-comments {
+        left: 10px;
+    }
+
+    .right-button-comments {
+        right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .comments-container {
+        width: 240px;
+        height: 400px;
+    }
+
+    .author-name {
+        font-size: 18px;
+    }
+
+    .author-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .left-button-comments {
+        left: 5px;
+    }
+
+    .right-button-comments {
+        right: 5px;
+    }
 }

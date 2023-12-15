@@ -73,18 +73,19 @@
 }
 
 .menu-mobile {
+    display: none;
     width: 300px;
     height: calc(100vh - 80px);
     position: absolute;
     top: 80px;
     background-color: #913561;
-    display: none;
     right: -300px;
     transition: all 0.5s;
 }
 
 .menu-mobile.active {
     right: 0;
+    display: block;
 }
 
 .container-menu-mobile {
@@ -112,9 +113,5 @@
 
     .menu-option {
         display: none;
-    }
-
-    .menu-mobile {
-        display: block;
     }
 }
