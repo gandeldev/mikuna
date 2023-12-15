@@ -77,12 +77,12 @@
 
 .qualities-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
 }
 
 .quality {
     width: 1fr;
-    height: 600px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -99,13 +99,13 @@
 }
 
 .quality:nth-child(2) {
-    border: 2px solid #FFA732;
-    color: #FFA732;
+    border: 2px solid #CC293F;
+    color: #CC293F;
 }
 
 .quality:nth-child(3) {
-    border: 2px solid #CC293F;
-    color: #CC293F;
+    border: 2px solid #FFA732;
+    color: #FFA732;
 }
 
 .quality:nth-child(1):hover {
@@ -114,12 +114,12 @@
 }
 
 .quality:nth-child(2):hover {
-    background-color: #FFA732;
+    background-color: #CC293F;
     color: #fff;
 }
 
 .quality:nth-child(3):hover {
-    background-color: #CC293F;
+    background-color: #FFA732;
     color: #fff;
 }
 
@@ -127,10 +127,83 @@
     width: 100%;
     display: block;
     text-align: left;
-    font-size: 48px;
+    font-size: 32px;
 }
 
 .quality-description {
     font-size: 18px;
     text-align: justify;
+}
+
+.comments {
+    background: url('https://i.postimg.cc/nh5srMnf/charanjeet-dhiman-9x-Ob-RZd-EN7g-unsplash-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.comments-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.comment {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 40px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+.comment.center {
+    left: 0;
+}
+
+.author-name {
+    font-size: 32px;
+}
+
+.author-comment {
+    text-align: justify;
+    font-size: 18px;
+}
+
+.left-button-comments,
+.right-button-comments {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+
+.left-button-comments {
+    left: 20px;
+}
+
+.right-button-comments {
+    right: 20px;
 }
