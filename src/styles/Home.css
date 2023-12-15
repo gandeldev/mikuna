@@ -1,0 +1,26 @@
+.cover-home {
+    background: url('https://i.postimg.cc/4yXsyQrF/chuttersnap-a-En-H4h-J-Mrs-unsplash-1.jpg');
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.about-home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-about-home {
+    width: 600px;
+    height: auto;
+    text-align: center;
+}
