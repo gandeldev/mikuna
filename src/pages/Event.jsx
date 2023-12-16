@@ -9,7 +9,7 @@ export const Event = () => {
             </div>
             <div className='descrption-event'>
                 <h2 className='subtitle'>
-                    Experiencia Exclusiva en el Hotel Cochabamba
+                    Feria Turística Gastronómica Nacional en Cochabamba
                 </h2>
                 <p className='event-date'>
                     16 - diciembre - 2023, 08:00 A.M.
@@ -19,19 +19,25 @@ export const Event = () => {
                 </p>
                 <ul className='event-details'>
                     <li>
-                        Únete a nosotros para una experiencia única en el corazón de Cochabamba en el prestigioso Hotel Cochabamba.
+                        ¡Bienvenidos a la Feria Turística Gastronómica Nacional en el Hotel Cochabamba!
                     </li>
                     <li>
-                        Disfruta de una noche llena de elegancia, gastronomía de primera clase y entretenimiento excepcional.
+                        Disfruta de una experiencia culinaria única con la auténtica comida tradicional de Bolivia.
                     </li>
                     <li>
-                        El evento contará con la participación de chefs reconocidos, artistas locales y muchas sorpresas que te cautivarán.
+                        Explora los sabores de los 9 departamentos de Bolivia en un ambiente festivo y lleno de cultura.
                     </li>
                     <li>
-                        Deléitate con exquisitos platos preparados por nuestros talentosos chefs, que fusionan lo mejor de la cocina local e internacional.
+                        La feria contará con la participación de empresas agropecuarias bolivianas, quienes exhibirán y ofrecerán a la venta productos frescos y deliciosos.
                     </li>
                     <li>
-                        Sumérgete en un ambiente sofisticado y disfruta de la hospitalidad única que caracteriza al Hotel Cochabamba.
+                        Sumérgete en un circuito turístico exclusivo en Cochabamba, diseñado para el público abierto y nuestros invitados nacionales.
+                    </li>
+                    <li>
+                        Participa en charlas informativas sobre turismo y gastronomía, donde expertos compartirán conocimientos sobre la rica herencia culinaria de Bolivia.
+                    </li>
+                    <li>
+                        Esta es tu oportunidad de conocer, saborear y adquirir productos de alta calidad directamente de las empresas bolivianas participantes.
                     </li>
                     <li>
                         No te pierdas esta oportunidad de vivir una experiencia inolvidable. ¡Te esperamos en el Hotel Cochabamba!
