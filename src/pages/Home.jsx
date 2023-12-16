@@ -33,18 +33,17 @@ const Home = () => {
             </div>
             <div className='about-home-section'>
                 <h2 className='subtitle'>
-                    BUENA GENTE + BUENA COMIDA
+                    DESCUBRE EL PATRIMONIO DE COCHABAMBA CON MIKUNA
                 </h2>
                 <p className='description-about-home'>
-
-                    Descubre la excelencia culinaria con nuestro servicio de catering en Mikuna. Desde eventos corporativos hasta bodas íntimas, nuestro equipo de chefs expertos se dedica a crear experiencias gastronómicas inolvidables. Con ingredientes frescos y presentación impecable, elevamos cada evento a un nivel superior. ¡Haz que tus momentos especiales sean inolvidables con Mikuna!
+                    Mikuna, el circuito turístico cultural, tiene como objetivo brindar una experiencia completa y única sobre las casonas de Cochabamba. Nos dedicamos a promover el patrimonio histórico y cultural de nuestra ciudad, destacando el potencial turístico que ofrece Cochabamba.
                 </p>
                 <a href='/services' className='our-services-about'></a>
             </div>
             <div className='qualities-section'>
-                <Quality title='CREATIVIDAD GASTRONÓMICA' description='Nuestro equipo de chefs altamente creativos va más allá de lo convencional para ofrecerte una experiencia culinaria única. Cada plato es una obra maestra de sabores innovadores y presentaciones artísticas, diseñadas para cautivar a tus invitados y despertar sus sentidos.' />
-                <Quality title='ADAPTABILIDAD PERSONALIZADA' description='Nos adaptamos a tus necesidades específicas, creando menús personalizados que reflejen tu estilo y temática del evento. Ya sea una celebración íntima o un gran evento corporativo, nuestro servicio de catering se ajusta a tus gustos, preferencias y requisitos dietéticos, garantizando una experiencia gastronómica personalizada.' />
-                <Quality title='ATENCIÓN DETALLADA AL CLIENTE' description='La satisfacción del cliente es nuestra prioridad. Desde la planificación hasta la ejecución, nuestro equipo está dedicado a proporcionar un servicio impecable. Cuidamos cada detalle, asegurándonos de que tu evento sea perfecto. Nuestra atención personalizada garantiza que te sientas respaldado y que cada aspecto del catering cumpla con tus expectativas y más.' />
+                <Quality title='EXPERIENCIA CULTURAL ÚNICA' description='Ofrecemos una combinación de atractivos culturales, naturales y gastronómicos que convierten a Cochabamba en un destino ideal para viajeros de todo el mundo. Explora nuestras casonas históricas, sumérgete en la riqueza de nuestra herencia y disfruta de una experiencia turística inigualable.' />
+                <Quality title='GASTRONOMÍA LOCAL Y AUTÉNTICA' description='Nuestro enfoque culinario resalta la diversidad de la gastronomía local. Con ingredientes frescos y presentaciones auténticas, Mikuna eleva la experiencia gastronómica para que disfrutes de sabores únicos que reflejan la riqueza cultural de Cochabamba.' />
+                <Quality title='ATENCIÓN DETALLADA AL VIAJERO' description='La satisfacción del viajero es nuestra prioridad. Desde la planificación hasta la ejecución, nuestro equipo está dedicado a proporcionar un servicio turístico impecable. Cuidamos cada detalle, asegurándonos de que tu experiencia en Cochabamba sea perfecta y cumpla con tus expectativas y más.' />
             </div>
             <div className='comments section'>
                 <button className='left-button-comments' onClick={handleLeft} disabled={leftIsDisable}>

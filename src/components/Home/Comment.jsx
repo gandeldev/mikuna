@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PropTypes from 'prop-types';
 
 export const Comment = ({ currentPosition, image, name, comment, idComment }) => {
-    const [position, setPosition] = useState('center');
+    const [position, setPosition] = useState('');
 
     useEffect(() => {
         if (currentPosition > idComment) {
