@@ -1,0 +1,26 @@
+[
+    {
+        "id": 0,
+        "title": "Ruta Cultural",
+        "description": "Descubre la historia y tradiciones de Cochabamba explorando casonas históricas, museos y sitios culturales.",
+        "cost": "50 Bs por persona"
+    },
+    {
+        "id": 1,
+        "title": "Ruta Gastronómica",
+        "description": "Embárcate en un viaje culinario para saborear la auténtica cocina cochabambina, desde mercados locales hasta restaurantes exclusivos.",
+        "cost": "40 Bs por persona"
+    },
+    {
+        "id": 2,
+        "title": "Ruta de Senderismo",
+        "description": "Explora la naturaleza impresionante de Cochabamba a través de senderos emocionantes que te llevarán a paisajes inolvidables.",
+        "cost": "30 Bs por persona"
+    },
+    {
+        "id": 3,
+        "title": "Ruta de Aventura",
+        "description": "Vive la emoción con actividades al aire libre y deportes extremos que te harán sentir la adrenalina de Cochabamba.",
+        "cost": "60 Bs por persona"
+    }
+]

@@ -13,8 +13,6 @@ export const Footer = () => {
                 <div className="menu-footer footer-section">
                     <a className='menu-option-footer' href="/home">Inicio</a>
                     <a className='menu-option-footer' href="/services">Servicios</a>
-                    <a className='menu-option-footer' href="/our">Nosotros</a>
-                    <a className='menu-option-footer' href="/contact">Contactanos</a>
                 </div>
                 <div className="event-footer footer-section">
                     <a className="event-option" href="/event"></a>

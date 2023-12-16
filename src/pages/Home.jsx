@@ -30,6 +30,7 @@ const Home = () => {
         <div className="home-page">
             <div className="cover-home">
                 <img src='https://i.postimg.cc/yNtyg5JQ/mikuna-logo.png' alt='Mikuna logo' draggable={false} />
+                <a className='event-link' href='/event'></a>
             </div>
             <div className='about-home-section'>
                 <h2 className='subtitle'>

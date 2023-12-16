@@ -10,6 +10,52 @@
     align-items: center;
     justify-content: center;
     background-attachment: fixed;
+    gap: 20px;
+}
+
+.event-link {
+    width: 300px;
+    height: 60px;
+    border: 1px solid #fff;
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.event-link::before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 0.5s;
+}
+
+.event-link::after {
+    content: 'HOTEL COCHABAMBA';
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.event-link:hover::before {
+    left: 0;
+}
+
+.event-link:hover::after {
+    background: linear-gradient(#913561, #CC293F);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .about-home-section {

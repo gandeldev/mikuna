@@ -121,4 +121,14 @@
         min-height: auto;
         padding: 20px;
     }
+
+    .event-option {
+        width: 200px;
+        height: 40px;
+    }
+
+    .event-option::before {
+        line-height: 40px;
+        font-size: 18px;
+    }
 }
